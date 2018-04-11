@@ -111,5 +111,9 @@
   "name": "LINE BLE beacon",
   "url":"/pkg/pizayanz/pxt-linebeacon",
   "cardType": "package"
+  }, {
+  "name": "inex iBit",
+  "url":"/pkg/emwta/pxt-iBit",
+  "cardType": "package"
 }]
 ```
