@@ -115,5 +115,9 @@
   "name": "inex iBit",
   "url":"/pkg/emwta/pxt-iBit",
   "cardType": "package"
+  }, {
+  "name": "Sunfounder Sloth",
+  "url":"/pkg/sunfounder/pxt-sloth",
+  "cardType": "package"
 }]
 ```

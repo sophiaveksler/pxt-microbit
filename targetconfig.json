@@ -22,7 +22,8 @@
             "MUSELAB/pxt-wifi-shield",
             "kittenbot/pxt-robotbit",
             "pizayanz/pxt-linebeacon",
-            "emwta/pxt-iBit"
+            "emwta/pxt-iBit",
+            "sunfounder/pxt-sloth"
         ],
         "preferredRepos": [
             "Microsoft/pxt-neopixel"
