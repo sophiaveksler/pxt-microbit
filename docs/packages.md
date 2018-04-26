@@ -115,5 +115,9 @@
   "name": "Sunfounder Sloth",
   "url":"/pkg/sunfounder/pxt-sloth",
   "cardType": "package"
+  }, {
+  "name": "4tronix BitBot",
+  "url":"/pkg/4tronix/BitBot",
+  "cardType": "package"
 }]
 ```
