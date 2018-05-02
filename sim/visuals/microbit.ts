@@ -879,7 +879,7 @@ namespace pxsim.visuals {
                 if (!state.accelerometerState.accelerometer.isActive) return;
 
                 if (!tiltDecayer) {
-                    tiltDecayer = setInterval(() => {
+                    tiltDecayer = window.setInterval(() => {
                         let accx = state.accelerometerState.accelerometer.getX(MicroBitCoordinateSystem.RAW);
                         accx = Math.floor(Math.abs(accx) * 0.85) * (accx > 0 ? 1 : -1);
                         let accy = state.accelerometerState.accelerometer.getY(MicroBitCoordinateSystem.RAW);

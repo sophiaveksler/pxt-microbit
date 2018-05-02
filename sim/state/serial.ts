@@ -1,3 +1,5 @@
+
+/// <reference path="./adafruit.ts"/>
 namespace pxsim {
     const SERIAL_BUFFER_LENGTH = 16;
     export class SerialState {
@@ -30,6 +32,11 @@ namespace pxsim {
 
 namespace pxsim.serial {
     export function writeString(s: string) {
+        // prints the string to the console log of the browser (in chrome at least)
+        //console.log(s);
+       pleaseWork(s);
+
+        // prints the string to the console of PXT
         board().writeSerial(s);
     }
 
