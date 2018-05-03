@@ -12,12 +12,13 @@
 
 /// <reference path="../../node_modules/pxt-core/typings/globals/node/index.d.ts"/>
 /// <reference path="../../node_modules/pxt-core/typings/modules/request/index.d.ts"/>
+/// <reference path="../../node_modules/pxt-core/built/pxtsim.d.ts"/>
 
-declare const localVarRequest: typeof request = require('request')
-declare const http: typeof http = require('http')
-declare const Promise: typeof bluebird = require('bluebird')
-//import * as localVarRequest from "request"
-//import * as http from "http"
+//declare const localVarRequest: typeof request = require('request')
+//declare const http: typeof http = require('http')
+//declare const Promise: typeof bluebird = require('bluebird')
+import * as localVarRequest from "request"
+import * as http from "http"
 //import * as Promise from "bluebird"
 
 

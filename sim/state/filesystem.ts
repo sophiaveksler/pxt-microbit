@@ -4,8 +4,9 @@ namespace pxsim.files {
         b.fileSystem.append(filename, text + "\r\n");
     }
     export function appendString(filename: string, text: string) {
-        const b = board();
-        b.fileSystem.append(filename, text);
+        //const b = board();
+        //b.fileSystem.append(filename, text);
+        adafruit.sendData(filename, text);
     }
     export function appendNumber(filename: string, value: number) {
         const b = board();

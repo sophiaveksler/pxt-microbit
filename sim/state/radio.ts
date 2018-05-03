@@ -169,15 +169,17 @@ namespace pxsim.radio {
     }
 
     export function sendValue(name: string, value: number) {
-        name = name.substr(0, 12);
-        const msg: number[] = [];
-        msg.push()
-        board().radioState.bus.datagram.send({
-            type: PacketPayloadType.VALUE,
-            groupId: board().radioState.groupId,
-            stringData: name,
-            numberData: value
-        });
+        //name = name.substr(0, 12);
+        //const msg: number[] = [];
+        //msg.push()
+        //board().radioState.bus.datagram.send({
+        //    type: PacketPayloadType.VALUE,
+        //    groupId: board().radioState.groupId,
+        //    stringData: name,
+        //    numberData: value
+        //});
+
+        adafruit.sendData("example", value+"");
     }
 
     export function receiveNumber(): number {
