@@ -10,10 +10,11 @@ How to reproduce a working connection between PXT and Adafruit.io:
     <script type="text/javascript" src="/blb/javascript-client/src/ApiClient.js"></script>
     <script type ="text/javascript" src = "/blb/javascript-client/src/api/DataApi.js"></script>
     ```
-6. Run ```pxt serve``` from the root directory.
-7. In the list of packages, click Advanced, and then scroll to the bottom to click "Add Package". 
-8. Add the "filesystem" package
-9. You may use the blocks now! Enjoy!
+6. From the root directory, go into sim/state/adafruit.ts, and change "your-key-here" to be your API key, and change "your-username-here" to be your username.
+7. Run ```pxt serve``` from the root directory.
+8. In the list of packages, click Advanced, and then scroll to the bottom to click "Add Package". 
+9. Add the "filesystem" package
+10. You may use the blocks now! Enjoy!
 
 
 
