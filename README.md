@@ -17,6 +17,7 @@ How to reproduce a working connection between PXT and Adafruit.io:
 10. Add the "filesystem" package. 
 11. You may use the blocks now! Enjoy!
 
+For an overview of the project: https://drive.google.com/file/d/1OpOUK-1gwfNHCJ1gciLCzOVaBKD-W09Q/view?usp=sharing
 
 
 ---------------
