@@ -1,3 +1,23 @@
+# Connecting PXT micro:bit to Adafruit.io
+How to reproduce a working connection between PXT and Adafruit.io:
+1. Download this repository
+2. Install all dependencies using ```npm install --save ```
+3. Generate the javascript client of the io-api following the directions from: https://github.com/adafruit/io-api
+4. Copy the generated folder into the node_modules/pxt-core/webapp/public/ directory.
+5. Copy the following code into the index.html file in the /pxt-core/public/ directory before the script tag for main.js (the last one)
+    ```
+    <script type="text/javascript" src="/blb/superagent/superagent.js"></script>
+    <script type="text/javascript" src="/blb/javascript-client/src/ApiClient.js"></script>
+    <script type ="text/javascript" src = "/blb/javascript-client/src/api/DataApi.js"></script>
+    ```
+6. Run ```pxt serve``` from the root directory.
+7. In the list of packages, click Advanced, and then scroll to the bottom to click "Add Package". 
+8. Add the "filesystem" package
+9. You may use the blocks now! Enjoy!
+
+
+
+---------------
 # micro:bit target for PXT
 
 This target allows you to program a [BBC micro:bit](https://microbit.org/) using 
