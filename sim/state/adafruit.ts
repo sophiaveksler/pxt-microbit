@@ -1,10 +1,7 @@
-// /// <reference path="./api.ts"/>
-// import * as api from './api'
-
 namespace pxsim.adafruit {
 	export function sendData(feed: string, data_val: string) {
-        var key = 'b9096d1f3ed8424ea1523b45361dbf39';
-        var username = 'sveksler'
+        var key = 'your-key-here';
+        var username = 'your-username-here'
         var feedname = feed;
         var datum = {"value": data_val}
 
