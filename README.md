@@ -4,17 +4,18 @@ How to reproduce a working connection between PXT and Adafruit.io:
 2. Install all dependencies using ```npm install --save ```
 3. Generate the javascript client of the io-api following the directions from: https://github.com/adafruit/io-api
 4. Copy the generated folder into the node_modules/pxt-core/webapp/public/ directory.
-5. Copy the following code into the index.html file in the /pxt-core/public/ directory before the script tag for main.js (the last one)
+5. Move the 'superagent' folder from the node_modules folder into the node_modules/pxt-core/webapp/public/ directory. If there is no superagent folder, go to the root directory and run ```npm install superagent --save```
+6. Copy the following code into the index.html file in the /pxt-core/public/ directory before the script tag for main.js (the last one)
     ```
     <script type="text/javascript" src="/blb/superagent/superagent.js"></script>
     <script type="text/javascript" src="/blb/javascript-client/src/ApiClient.js"></script>
     <script type ="text/javascript" src = "/blb/javascript-client/src/api/DataApi.js"></script>
     ```
-6. From the root directory, go into sim/state/adafruit.ts, and change "your-key-here" to be your API key, and change "your-username-here" to be your username.
-7. Run ```pxt serve``` from the root directory.
-8. In the list of packages, click Advanced, and then scroll to the bottom to click "Add Package". 
-9. Add the "filesystem" package
-10. You may use the blocks now! Enjoy!
+7. From the root directory, go into sim/state/adafruit.ts, and change "your-key-here" to be your API key, and change "your-username-here" to be your username.
+8. Run ```pxt serve``` from the root directory.
+9. In the list of packages, click Advanced, and then scroll to the bottom to click "Add Package". 
+10. Add the "filesystem" package. 
+11. You may use the blocks now! Enjoy!
 
 
 
